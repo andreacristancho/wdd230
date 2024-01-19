@@ -10,8 +10,34 @@
     Recopila los proyectos del curso de Desarrollo Frontend Web. "
     />
     <meta name="author" content="Andrea Fernanda Cristancho Cortés" />
-    <script src="scripts/my-script.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
     <link rel="stylesheet" href="styles/base.css" />
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+    
+    <!-- metaeqtiquetas -->
+    <meta property="og:title" content="Andrea Cristancho Website" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://media.istockphoto.com/id/1344630714/video/bogota-city-aerial-hyperlapse-by-night.jpg?s=640x640&k=20&c=Di_9ot3B_1ik6fefzdCQZFlsEeIy7D6mTBikywnJJTY="
+    />
+    <meta
+      property="og:url"
+      content="https://andreacristancho.github.io/wdd230/index.html.htm"
+    />
+    <!-- normalize.css, archivo que agregué en carpeta Styles, pero que finalmente no uso pq voy 
+    a usar una opción óptima que está más abajo -->
+    <!--   <link rel="stylesheet" href="styles/normalize.css">    -->
+
+    <!-- Esta es la soluc óptima para normalizar pq tiene en cuenta servidores más 
+      cercanos geográficamente y porque trae el código simplificado y no me requiere crear el normalizer.cc
+      con su respectivo código -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
   </head>
   <body>
     <header>
@@ -36,19 +62,25 @@
     </nav>
     <main>
       <h2>WDD 230: Web Frontend Development</h2>
-      <section class="card">
-        <h3>Learnign Activities</h3>
-        <ul>
-          <li><a href="#">Activity 1</a></li>
-          <li><a href="#">Activity 2</a></li>
-        </ul>
-      </section>
 
-      <section class="card">
-        <h3>Information</h3>
-        <h3>Weather</h3>
-        <h3>Number of visits</h3>
-      </section>
+      <div class="grid-container">
+        <section class="card">
+          <h3 class="tittle-card">Learning Activities</h3>
+          <ul>
+            <li><a href="#">Activity 1</a></li>
+            <li><a href="#">Activity 2</a></li>
+          </ul>
+        </section>
+
+        <div class="grid-information">
+          <section class="card">
+            <h3 class="tittle-card">Information</h3>
+            <p>Bogotá, Colombia</p>
+
+            <p>Number of visits</p>
+          </section>
+        </div>
+      </div>
     </main>
     <footer>
       <p id="copyrightInfo"></p>
