@@ -3,6 +3,7 @@
 main {
   display: grid;
   margin-top: 20px;
+  background-color: #f1faee;
 }
 
 body,
@@ -15,8 +16,9 @@ ul {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+}
+main {
+  background-color: #f1faee;
 }
 
 .container {
@@ -29,7 +31,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #1b4965;
-  color: white;
+  color: f1faee;
   text-align: center;
   padding-left: 30%;
 }
@@ -40,13 +42,16 @@ header img {
 
 header h1 {
   padding-left: 5%;
-}
-nav {
-  margin-top: 20px;
-  background-color: #101111;
+  color: white;
 }
 
-/* Me falta colocar la letra blanca en nav */
+nav {
+  background-color: #f1faee /*Fondo de Home Site pla */;
+  border-bottom: 2px solid #1d3557; /* Línea de 1 píxel sólido, color gris claro */
+  padding-bottom: 20px; /
+ 
+}
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -54,27 +59,29 @@ nav ul {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  display: flex;
 }
 
 nav li a {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: white;
+  color: #1d3557; /*Color letra Home Site Plan Chamber... */
 }
 
+nav li {
+  padding: 1%;
+}
+
+section .card {
+  background-color: #f1faee;
+}
 h2 {
-  color: black;
+  /* WDD230 Web Frontend...*/
+  color: #e63946;
   text-align: center;
 }
 
-.grid-learning-activities {
-  background-color: red;
-  /*text-align: center; */
-}
-
 .title-card {
-  background-color: red;
   text-align: center;
 }
 
@@ -82,12 +89,11 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2 fr;
-  /*align-items: center; */
   background-color: #1b4965;
 }
 
 h3.tittle-card {
-  color: white;
+  color: #f1faee;
   background-color: #1b4965;
   text-align: center;
   padding-bottom: 20px;
@@ -95,7 +101,7 @@ h3.tittle-card {
   font-weight: bold;
 }
 .card {
-  background-color: #fff;
+  background-color: #f1faee; /*fondo activity; */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding-bottom: 20px;
@@ -107,12 +113,17 @@ li {
   padding-left: 50px;
 }
 
+li a {
+  color: #1d1e3a; /* Letra Activity */
+}
 h3 {
   align-content: center;
+  color: #1d3557;
 }
 
-p {
+section p {
   text-align: center;
+  color: #1d3557;
 }
 
 footer {
@@ -123,5 +134,5 @@ footer {
 }
 
 #lastModified {
-  color: rgba(255, 145, 0, 0.758);
+  color: #f3c88c;
 }
