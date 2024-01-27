@@ -33,6 +33,12 @@ body {
   border: 10px solid #023047;
   transition: transform 0.5s;
   box-shadow: 5px 5px 10px #6f7364;
+  padding-bottom: px;
+
+}
+
+a {
+  padding-top: 100px;
 }
 
 /*
@@ -42,9 +48,3 @@ body {
     height: auto;
   }
 }  */
-
-@media screen and (min-width: 500px) {
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
-}

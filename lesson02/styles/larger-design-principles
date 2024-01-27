@@ -1,0 +1,5 @@
+@media screen and (min-width: 500px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
