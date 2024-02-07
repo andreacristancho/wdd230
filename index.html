@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- normalize.css, archivo que agregué en carpeta Styles, pero que finalmente no uso pq voy 
+    a usar una opción óptima que está más abajo -->
+    <!--   <link rel="stylesheet" href="styles/normalize.css">    -->
+
+    <!-- Esta es la soluc óptima para normalizar pq tiene en cuenta servidores más 
+      cercanos geográficamente y porque trae el código simplificado y no me requiere crear el normalizer.cc
+      con su respectivo código NOTA. APARECE EN EL HEAD ANTES DE TODO-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrea Cristancho - WDD 230 - Web Frontend Development</title>
@@ -29,17 +40,6 @@
     <meta
       property="og:url"
       content="https://andreacristancho.github.io/wdd230/index.html.htm"
-    />
-    <!-- normalize.css, archivo que agregué en carpeta Styles, pero que finalmente no uso pq voy 
-    a usar una opción óptima que está más abajo -->
-    <!--   <link rel="stylesheet" href="styles/normalize.css">    -->
-
-    <!-- Esta es la soluc óptima para normalizar pq tiene en cuenta servidores más 
-      cercanos geográficamente y porque trae el código simplificado y no me requiere crear el normalizer.cc
-      con su respectivo código -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
   </head>
   <body>
@@ -72,6 +72,14 @@
           <ul>
             <li><a href="#">Activity 1</a></li>
             <li><a href="#">Activity 2</a></li>
+            <li>
+              <a href="#">Activity 3:</a
+              ><img
+                alt="CCS Combinators"
+                src="images/css-combinators-image.png"
+                width="60"
+              />
+            </li>
           </ul>
         </section>
 
