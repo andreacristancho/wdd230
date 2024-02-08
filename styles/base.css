@@ -45,6 +45,20 @@ header h1 {
   color: white;
 }
 
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
 nav {
   background-color: #f1faee /*Fondo de Home Site pla */;
   border-bottom: 2px solid #1d3557; /* Línea de 1 píxel sólido, color gris claro */
@@ -136,3 +150,7 @@ footer {
 #lastModified {
   color: #f3c88c;
 }
+
+
+
+
