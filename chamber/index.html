@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+     <!-- normalize -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- script -->
+    <script src="scripts/chamber.js" defer></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bucaramanga Chamber of Commerce</title>
@@ -28,104 +42,124 @@
       content="https://andreacristancho.github.io/wdd230/chamber/index.html.htm"
     />
   </head>
+
+
+
   <body>
-    <header>
-      <img alt="Image of me" src="images/andrea-cara.png" width="150" />
-      <h1>Andrea Cristancho</h1>
-      h1
-    </header>
-    <a id="menu" href="#"></a>
-    <nav>
-      <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="chamber/">Chamber</a></li>
-        <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-        <li>
-          <a
-            href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/40?lang=spa&id=p29-p31#p29"
-            target="_blank"
-            >Scripture</a
-          >
-        </li>
-        <li><a href=""></a></li>
-      </ul>
-    </nav>
-    <main>
-      <h2>WDD 230: Web Frontend Development</h2>
 
-      <div class="grid-container">
-        <section class="card">
-          <h3 class="tittle-card">Learning Activities</h3>
-          <ul>
-            <li><a href="#">Activity 1</a></li>
-            <li><a href="#">Activity 2</a></li>
-            <li>
-              <a href="#">Activity 3:</a>
+    
 
-              <ul>
-                <li>
-                  CSS Combinators Image ><img
-                    alt="Image of css combinators"
-                    src="images/css-combinators-image.png"
-                    width="90"
-                  />
-                </li>
+      <header>
+        <section class="header-section">
+          <a id="logo-link" href="index.html">
+            <img
+              class="logo"
+              src="images/logo-temporal.png"
+              alt="Bucaramanga Chamber of Commerce"
+            />
+          </a>
 
-                <li>
-                  <a
-                    href="https://codepen.io/AndreaCris/pen/zYbLQNN"
-                    target="_blank"
-                    >Link Codepen Pseudo Elements</a
-                  >
-                </li>
-
-                <li>
-                  <a
-                    href="https://codepen.io/AndreaCris/pen/QWoBegB"
-                    target="_blank"
-                    >Link Codepen Responsive Navigation</a
-                  >
-                </li>
-
-                <li>
-                  <a
-                    href="https://codepen.io/AndreaCris/pen/VwREmMM"
-                    target="_blank"
-                    >Link Codepen Pseudo Class</a
-                  >
-                </li>
+         
+            <h1 class="banner-title">BUCARAMANGA CHAMBER OF COMMERCE</h1>
+            
+            <a id="menu" href="#"></a>
+            <nav>
+              <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="chamber-discover.html">Discover</a></li>
+                <li><a href="chamber-directory.html">Directory</a></li>
+                <li><a href="chamber-join-html" target="_blank">Join</a></li>
+      
               </ul>
-            </li>
-          </ul>
+            </nav>
+         
         </section>
+      </header>
 
-        <div class="grid-information">
-          <section class="card">
-            <h3 class="tittle-card">Information</h3>
-            <p>Bogotá, Colombia</p>
 
-            <p>Number of visits</p>
-          </section>
+    
+    
+
+
+
+
+
+    <main>
+      <div id="hero">
+        <div id="hero-box">
+          <img
+            id="hero-img"
+            src="images/hero-img-chamber-1.png"
+            alt="People enjoying work"
+          />
         </div>
-
-        <section>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.740260406933!2d-74.05865891993385!3d4.640357417940582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a3c0d8108bd%3A0xb65250aa2bbe5e11!2sEdificio%20Mizu!5e0!3m2!1ses!2sco!4v1707519766779!5m2!1ses!2sco"
-            width="600"
-            height="450"
-            style="border: 2px solid white"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <section id="hero-msg">
+          <h1 class="home-tittle">Don't be left out</h1>
+          <h4>
+            Take advantage of the opportunities offered by the Bucaramanga Chamber of Commerce.
+          </h4>
+          <div class="button-box">
+            <a class="book" href="rates.html"
+              >Join now</a
+            >
+          </div>
         </section>
       </div>
+
+        <section>
+        <div id="background"></div>
+        <img
+          class="current events section"
+          src="images/rueda-negocios-img.png"
+          alt="Event Section Image"
+        />
+      </section>
+
+        <section class="msg">
+          <h2>International Business Roundtable May 6 -10</h2>
+          <p>
+            Participate in the business roundtable with international investors who wish 
+            to contact technology, manufacturing and food service providers.
+          </p>
+
+        </section>
+
+
+        <section class="weather-card">
+            <div class="location">Bucaramanga, Colombia</div>
+            <div class="temperature">27°C</div>
+            <div class="description">Sunny</div>
+        </section>
+
+
+
+        <section class="company spotlight 1">
+            <img class="card-img" src="images/productivity-image.png" alt="Productivity" />
+            <h2>Productivity</h2>
+            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+          </section>
+
+         
+          <section class="company 'spotlight 2">
+            <img class="card-img" src="images/coaching-image.png" alt="Coaching" />
+            
+            <h2>Training and coaching</h2>
+            <p>bbbbbbbbbbbbbbbbbbbb</p>
+
+        
+          </section>
+
+
+
     </main>
+
     <footer>
       <p id="copyrightInfo"></p>
       <p id="currentYear"></p>
       <p id="lastModified"></p>
+      <p>WDD230 BYU Course Project</p>
+
+
     </footer>
   </body>
 </html>
