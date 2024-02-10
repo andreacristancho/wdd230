@@ -31,7 +31,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #1b4965;
-  color: f1faee;
+  color: #f1faee;
   text-align: center;
   padding-left: 30%;
 }
@@ -46,24 +46,46 @@ header h1 {
 }
 
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: #eee;
-	color: #000;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: #eee;
+  color: #000;
 }
 
 #menu::before {
-	content: "≡";
+  content: "≡";
 }
 
 nav {
   background-color: #f1faee /*Fondo de Home Site pla */;
   border-bottom: 2px solid #1d3557; /* Línea de 1 píxel sólido, color gris claro */
-  padding-bottom: 20px; /
- 
+  padding-bottom: 20px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+show li {
+  display: block;
 }
 
 nav ul {
@@ -76,16 +98,19 @@ nav ul {
   display: flex;
 }
 
-nav li a {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #1d3557; /*Color letra Home Site Plan Chamber... */
+.navigation a:hover,
+navigation a:active {
+  color: white;
+  background-color: black;
 }
 
-nav li {
-  padding: 1%;
+.show li {
+  display: block;
 }
 
+#menu.show::before {
+  content: "X";
+}
 section .card {
   background-color: #f1faee;
 }
@@ -102,7 +127,7 @@ h2 {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2 fr;
+  grid-template-rows: 3fr;
   background-color: #1b4965;
 }
 
@@ -110,7 +135,7 @@ h3.tittle-card {
   color: #f1faee;
   background-color: #1b4965;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 20px;
   font-weight: bold;
 }
@@ -151,6 +176,25 @@ footer {
   color: #f3c88c;
 }
 
+/* Pseudo element*/
 
+main h2::before {
+  content: "🔷";
+  margin-left: 5px;
+  margin-right: 20px;
+}
 
+main h2::after {
+  content: "🔷";
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+iframe {
+  display: block;
+  margin: 20px; /* Márgenes alrededor del iframe */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center;
+  max-width: 100%; /* Hacer que el ancho del iframe sea máximo 100% */
+  height: auto; /* Altura automática para mantener la proporción */
+}

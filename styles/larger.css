@@ -11,4 +11,8 @@
   .navigation a {
     text-align: center;
   }
+
+  #menu {
+    display: none;
+  }
 }
