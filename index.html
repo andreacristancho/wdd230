@@ -1,28 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- normalize.css, archivo que agregué en carpeta Styles, pero que finalmente no uso pq voy 
-    a usar una opción óptima que está más abajo -->
-    <!--   <link rel="stylesheet" href="styles/normalize.css">    -->
-
-    <!-- Esta es la soluc óptima para normalizar pq tiene en cuenta servidores más 
-      cercanos geográficamente y porque trae el código simplificado y no me requiere crear el normalizer.cc
-      con su respectivo código NOTA. APARECE EN EL HEAD ANTES DE TODO-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrea Cristancho - WDD 230 - Web Frontend Development</title>
     <meta
       name="description"
-      content="Website de asignaciones del curso WDD 230 - Desarrollo Frontend Web de Andrea Fernanda Cristancho.
-    Recopila los proyectos del curso de Desarrollo Frontend Web. "
+      content="WDD 230- Web Frontend Development course assignment portal"
     />
     <meta name="author" content="Andrea Fernanda Cristancho Cortés" />
-    <script src="scripts/getdates.js" defer></script>
 
+   
+    <link rel="stylesheet" href="styles/normalize.css" />
     <!-- debo agregar los archivos css adicionales creados-->
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
@@ -41,13 +30,18 @@
       property="og:url"
       content="https://andreacristancho.github.io/wdd230/index.html.htm"
     />
+    <script src="scripts/getdates.js" defer></script>
+
   </head>
+
   <body>
     <header>
       <img alt="Image of me" src="images/andrea-cara.png" width="150" />
       <h1>Andrea Cristancho</h1>
     </header>
+
     <a id="menu" href="#"></a>
+
     <nav>
       <ul class="navigation">
         <li><a href="#">Home</a></li>
@@ -64,6 +58,7 @@
         <li><a href=""></a></li>
       </ul>
     </nav>
+
     <main>
       <h2>WDD 230: Web Frontend Development</h2>
 
@@ -71,18 +66,16 @@
         <section class="card">
           <h3 class="tittle-card">Learning Activities</h3>
           <ul>
-            <li><a href="#">Activity 1</a></li>
-            <li><a href="#">Activity 2</a></li>
+            <li><a href="https://andreacristancho.github.io/wdd230/index.html">Activity 1</a></li>
+            <li><a href="https://andreacristancho.github.io/wdd230/lesson02/design-principles.html">Activity 2</a></li>
             <li>
-              <a href="#">Activity 3:</a>
+              <a href="https://andreacristancho.github.io/wdd230/lesson03/chamber-site-plan.html">Activity 3:</a>
 
               <ul>
-                <li>
-                  CSS Combinators Image ><img
-                    alt="Image of css combinators"
-                    src="images/css-combinators-image.png"
-                    width="90"
-                  />
+            
+                <li><a href="images/css-combinators-image.png" target="_blank" rel="noopener noreferrer">Open Combinator Image</a>
+              
+
                 </li>
 
                 <li>
@@ -112,6 +105,7 @@
             </li>
           </ul>
         </section>
+      </div>
 
         <div class="grid-information">
           <section class="card">
@@ -122,11 +116,11 @@
           </section>
         </div>
 
-        <section>
+        <section class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.740260406933!2d-74.05865891993385!3d4.640357417940582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a3c0d8108bd%3A0xb65250aa2bbe5e11!2sEdificio%20Mizu!5e0!3m2!1ses!2sco!4v1707519766779!5m2!1ses!2sco"
-            width="600"
-            height="450"
+            width="450"
+            height="600"
             style="border: 2px solid white"
             allowfullscreen=""
             loading="lazy"
@@ -135,6 +129,7 @@
         </section>
       </div>
     </main>
+
     <footer>
       <p id="copyrightInfo"></p>
       <p id="currentYear"></p>

@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-
-    <!-- styles -->
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-
-    <!-- script -->
-    <script src="scripts/chamber.js" defer></script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bucaramanga Chamber of Commerce</title>
@@ -23,9 +9,6 @@
       content="Website of the Chamber of Commerce of Bucaramanga. "
     />
     <meta name="author" content="Andrea Fernanda Cristancho Cortés" />
-
-    <!-- favicon -->
-    <link rel="icon" href="images/newfavicon.ico" />
 
     <!-- metaeqtiquetas -->
     <meta
@@ -42,6 +25,20 @@
       property="og:url"
       content="https://andreacristancho.github.io/wdd230/chamber/index.html.htm"
     />
+
+    <!-- favicon -->
+    <link rel="icon" href="images/newfavicon.ico" />
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- script -->
+    <script src="scripts/chamber.js" defer></script>
   </head>
 
   <body>
@@ -52,22 +49,30 @@
             class="logo"
             src="images/logo-temporal.png"
             alt="Bucaramanga Chamber of Commerce"
+            width="400"
+            height="auto"
           />
         </a>
-
         <h1 class="banner-title">BUCARAMANGA CHAMBER OF COMMERCE</h1>
+      </header>
 
+       
+        <!-- menu hamburguesa -->
         <a id="menu" href="#"></a>
+      
         <nav>
           <ul class="navigation">
+          
             <li><a href="#">Home</a></li>
             <li><a href="chamber-discover.html">Discover</a></li>
             <li><a href="chamber-directory.html">Directory</a></li>
             <li><a href="chamber-join-html" target="_blank">Join</a></li>
           </ul>
+          
         </nav>
+
       </section>
-    </header>
+    
 
     <main>
       <div id="hero">
@@ -78,6 +83,7 @@
             alt="People enjoying work"
           />
         </div>
+
         <section id="hero-msg">
           <h2 class="home-tittle">Don't be left out</h2>
           <h4>
@@ -91,7 +97,7 @@
       </div>
 
       <section>
-        <div id="background"></div>
+        <div id="background-roundtable"></div>
         <img
           class="current events section"
           src="images/rueda-negocios-img.png"
