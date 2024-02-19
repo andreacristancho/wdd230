@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucaramanga Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Website of the Chamber of Commerce of Bucaramanga. "
+    />
+    <meta name="author" content="Andrea Fernanda Cristancho Cortés" />
+
+    <!-- metaeqtiquetas -->
+    <meta
+      property="og:title"
+      content="Website of the Chamber of Commerce of Bucaramanga"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:image"
+      content="https://hotelruitoquebucaramanga.com/wp-content/uploads/2017/11/bucaramanga.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://andreacristancho.github.io/wdd230/chamber/index.html.htm"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" href="images/newfavicon.ico" />
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- script -->
+    <script src="scripts/chamber.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <section class="header-section">
+        <a id="logo-link" href="index.html">
+          <img
+            class="logo"
+            src="images/logo-temporal.png"
+            alt="Bucaramanga Chamber of Commerce"
+            width="400"
+          />
+        </a>
+        <h1 class="banner-title">Bucaramanga Chamber of Commerce</h1>
+
+        <!-- menu hamburguesa -->
+        <a id="menu" href="#"></a>
+
+        <nav>
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber-discover.html">Discover</a></li>
+            <li><a href="chamber-directory.html">Directory</a></li>
+            <li><a href="chamber-join-html" target="_blank">Join</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+    </header>
+
+    <main>
+      <div id="hero">
+        <div id="hero-box">
+          <img
+            id="hero-img"
+            src="images/ok-hero-negociantes.png"
+            alt="People enjoying work"
+          />
+        </div>
+
+        <section id="hero-msg">
+          <h2 class="home-title">Don't be left out</h2>
+
+          <h4 class="clasic-msg">
+            Take advantage of the opportunities offered by the Bucaramanga
+            Chamber of Commerce.
+          </h4>
+
+          <div id="join">
+            <a class="book" href="rates.html">Join to the Chamber</a>
+          </div>
+        </section>
+      </div>
+
+      <div class="all-section">
+        <section id="event-section" class="each-section">
+          <h2 class="title-section">Events</h2>
+
+          <div class="event-box">
+            <h3 class="title-event">
+              International Business Roundtable May 6 -10
+            </h3>
+            <p class="event">
+              Participate in the business roundtable with international
+              investors who wish to contact technology, manufacturing and food
+              service providers.
+            </p>
+          </div>
+
+          <div class="event-box">
+            <h3 class="title-event">Virtual Training Courses</h3>
+            <p class="event">
+              Get to know the training offer for entrepreneurs and businessmen
+              with trajectory in the courses that we have in agreement with the
+              Universidad Industrial de Santander.
+            </p>
+          </div>
+        </section>
+
+        <section id="weather-section" class="each-section">
+          <div id="weather"></div>
+          <h2 class="title-section">Weather</h2>
+          <div class="location">Bucaramanga, Colombia</div>
+          <div class="temperature">27°C</div>
+          <div class="description">Sunny</div>
+        </section>
+
+        <h2 class="title-companies">Companies Spotlights</h2>
+
+        <section class="each-section">
+          <div id="num1" class="company-spotlight">
+            <!--   Img luego <img class="card-img" src="images/productivity-image.png" alt="Coaching" />   -->
+            <h3 class="spotlight">Ciudad Bonita Hotel</h3>
+            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+          </div>
+        </section>
+
+        <section class="each-section">
+          <div id="num2" class="company-spotlight">
+            <!--   Img luego <img class="card-img" src="images/coaching-image.png" alt="Coaching" />   -->
+            <h3 class="spotlight">Hega Oil Company</h3>
+            <p>bbbbbbbbbbbbbbbbbbbb</p>
+          </div>
+        </section>
+
+        <section class="each-section">
+          <div id="num3" class="company-spotlight">
+            <!--   Img luego <img class="card-img" src="images/coaching-image.png" alt="Coaching" />   -->
+            <h3 class="spotlight">Socalif Restaurant</h3>
+            <p>bbbbbbbbbbbbbbbbbbbb</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p id="copyrightInfo"></p>
+      <p id="currentYear"></p>
+      <p id="lastModified"></p>
+      <p>WDD230 BYU Course Project</p>
+    </footer>
+  </body>
+</html>
