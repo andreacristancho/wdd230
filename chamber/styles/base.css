@@ -2,6 +2,10 @@
 
 /* Tengo que revisar pq la hamburguer no me funciona como debería*/
 
+/*Para traer selectores en la barra superior de VSCode:
+copio el cód HTML, luego  digito >HTML to CC GENERATE Y
+pego en CSS*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 * {
@@ -18,19 +22,22 @@ body {
   padding: 0;
   margin: 0 auto;
   font-size: 22px;
-  padding: 0;
+  
 }
 
 header {
   display: flex;
   align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  padding-right: 10px;
 }
 section.header-section {
   max-width: 1600px;
   display: flex;
   /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 3fr 1fr 1fr; */
-  background-color: #275493;
+  background-color: #1b4965;
   width: 100%;
   margin: 0;
   align-items: center;
@@ -44,16 +51,20 @@ section.header-section {
 
 h1.banner-title {
   font-family: Roboto;
-  font-size: 2rem;
-  justify-content: center;
+  font-size: 2.5rem;
+  justify-content:flex-start;
   text-align: center;
   align-items: center;
   color: white;
+  
 }
 
 main {
-  margin-top: 20px;
-  background-color: #ebebeb;
+  margin:auto;
+  background-color: white;
+  width: 60%;
+  margin-bottom: 30px;
+  
 }
 
 h1,
@@ -83,7 +94,7 @@ p {
 }
 
 .nav {
-  background-color: pink;
+  
   border-bottom: 2px solid red;
   padding-bottom: 20px;
 }
@@ -94,9 +105,6 @@ p {
   max-width: 760px;
 }
 
-.navigation li {
-  display: none;
-}
 
 .navigation a {
   display: block;
@@ -143,67 +151,201 @@ navigation a:active {
 section .card {
   background-color: #f1faee;
 }
-h2 {
-  /* WDD230 Web Frontend...*/
-  color: #e63946;
-  text-align: center;
-}
 
 .title-card {
   text-align: center;
 }
 
-.grid-container {
+
+
+#hero {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3fr;
-  background-color: #1b4965;
+  grid-template-columns: 1fr 1f 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr;
+  height: 420px;
+  margin-bottom: 30px;
+  
 }
 
-h3.tittle-card {
-  color: #f1faee;
-  background-color: #1b4965;
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: 20px;
+#hero-box {
+  grid-column: 1/6;
+  grid-row: 1/4;
+  z-index: 2;
+  
+  
+
+}
+
+#hero-img {
+  width: 1600px;
+  display: block;
+  height: auto;
+  margin: auto;
+  opacity: 0.;
+}
+
+#hero-h2 {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  margin-top: 100px;
+  z-index: 2;
+  color: white;
+  font-weight: 200;
+}
+section#hero-msg {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  margin-top: 100px;
+  z-index: 2;
+  color: white;
+  font-weight: 200;
+}
+
+h2.home-title {
+  text-align: left;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  padding-left: 30px;
+}
+
+h4.clasic-msg {
+  text-align: left;
+  font-family: poppins;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  padding-left: 30px;
+  background-color: #EBEBEB;
+  color: black;
+}
+
+button#join {
+  grid-column: 1/6;
+  grid-row: 3/4;
+  background-color: #FF6700;
+  height:50px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  color: white;
+}
+
+a.book{
+  color: white;
+  padding: 10px;
+  font-weight:100;
+}
+
+/* MAIN SECTIONS*/
+
+
+.each-section {
+  background-color: #EBEBEB;
+  border: 1px solid grey;
+  box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+  margin: 30px;
+  
+}
+.title-section {
+  font-family: poppins, sans-serif;
+  font-size: 2.0rem;
   font-weight: bold;
-}
-.card {
-  background-color: #f1faee; /*fondo activity; */
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding-bottom: 20px;
+  padding-top:30px;
+  padding-bottom: 50px;
 
-  /*text-align: center; */
 }
 
-li {
-  padding-left: 50px;
+.title-section::before {
+  content: "🔷";
+  margin-left: 20px;
+  margin-right: 20px;
+  
 }
 
-li a {
-  color: #1d1e3a; /* Letra Activity */
-}
-h3 {
-  align-content: center;
-  color: #1d3557;
+
+
+.each-event {
+  padding: 30px;
+  background-color: white;
+
 }
 
-section p {
-  text-align: center;
-  color: #1d3557;
+div.event-box {
+  margin:5px;
+  border: 1px dashed gray;
+  margin: 30px;
+  padding: 15px;
+  background-color: white;
+  
+}
+.title-event {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  color: #1b4965;
+}
+
+.event{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  
+}
+
+/* I DON'T KNOW 
+.location {
+}
+.temperature {
+}
+.description {
+}
+*/
+
+#spotlight-section {
+  display: block;
+  justify-content: flex-start;
+}
+.company-spotlight {
+  margin: 20px;
+  margin:5px;
+  border: 1px dashed gray;
+  margin: 30px;
+  padding: 15px;
+  background-color: white;
+
+}
+
+
+
+.spotlight {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  color: #1b4965;
+}
+
+.spotlight p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
 }
 
 footer {
+  display: block;
   text-align: center;
-  padding: 20px;
+  padding-top: 50px;
   background-color: #1b4965;
   color: white;
+  height: 200px;
+
 }
 
 #lastModified {
   color: #f3c88c;
 }
+
+img {
+  max-width: 100%;
+  margin: 0;
+}
+
+
 
 @media creen and (max-width: 550px) {
   h1 {
@@ -247,3 +389,17 @@ footer {
     display: block;
   }
 }
+
+h2.title-companies {
+  font-family: poppins, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top:30px;
+  padding-bottom: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  color: #FF6700;
+  
+
+}
+
