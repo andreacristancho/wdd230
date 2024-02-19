@@ -219,8 +219,8 @@ h4.clasic-msg {
   color: black;
 }
 
-button#join {
-  grid-column: 1/6;
+div#join {
+  grid-column: 2/3;
   grid-row: 3/4;
   background-color: #FF6700;
   height:50px;
@@ -234,6 +234,8 @@ a.book{
   color: white;
   padding: 10px;
   font-weight:100;
+  align-items: center
+  
 }
 
 /* MAIN SECTIONS*/
@@ -313,9 +315,7 @@ div.event-box {
 
 }
 
-
-
-.spotlight {
+.spotlight h2{
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.5rem;
   color: #1b4965;
