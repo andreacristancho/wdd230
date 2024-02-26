@@ -7,18 +7,12 @@
 }
 
 main {
-  max-width: 100%;
-  display: grid;
-  background-color: #f1faee;
-  justify-content: center;
-}
-
-main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr 3fr 3fr;
   margin-left: 10%;
   margin-right: 10%;
+  background-color: #f1faee;
 }
 
 main h2 {
@@ -27,6 +21,10 @@ main h2 {
   color: #e63946;
   text-align: center;
   margin: 0%;
+}
+
+.hero img {
+  height: auto;
 }
 
 body,
@@ -43,13 +41,11 @@ body {
 
 header {
   display: flex;
-  width: 100%;
   align-items: center;
   background-color: #1b4965;
   color: #f1faee;
   text-align: center;
   margin: 0;
-  text-justify: center;
   padding-left: 30px;
   justify-content: center;
 }
@@ -63,13 +59,14 @@ header h1 {
   padding-left: 5%;
   color: white;
 }
-
+/* Mobile View ***/
 #menu {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
+  background-color: #e63946;
   color: #000;
 }
 
@@ -78,10 +75,7 @@ header h1 {
 }
 
 nav {
-  background-color: white /*Fondo de Home Site pla */;
-  border-bottom: 2px solid #1d3557; /* Línea de 1 píxel sólido, color gris claro */
-  padding-bottom: 1cqh;
-  width: 100%;
+  background-color: tomato /*Fondo de Home Site pla */;
 }
 
 .navigation {
@@ -104,19 +98,6 @@ nav {
   transition: 0.5s;
   font-size: clamp(1rem, 2vmin, 1.5rem);
 }
-show li {
-  display: block;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  display: flex;
-}
 
 .navigation a:hover,
 navigation a:active {
@@ -130,18 +111,6 @@ navigation a:active {
 
 #menu.show::before {
   content: "X";
-}
-
-#menu.open::before {
-  content: "❎";
-}
-
-section .card {
-  background-color: #f1faee;
-}
-
-.title-card {
-  text-align: center;
 }
 
 .grid-container {
@@ -181,7 +150,16 @@ li {
   padding-left: 50px;
 }
 
-li a {
+.grid-container ul {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  display: flex;
+}
+
+.grid-container ul li a {
   color: #1d1e3a; /* Letra Activity */
 }
 
@@ -225,4 +203,20 @@ section iframe {
   height: 80%; /* Altura automática para mantener la proporción */
   margin-left: 10%;
   margin-right: 10%;
+}
+
+@media only screen and (min-width: 40em) {
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 100%;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  #menu {
+    display: none;
+  }
 }
