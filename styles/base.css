@@ -66,7 +66,7 @@ header h1 {
   font-weight: 700;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
-  background-color: #e63946;
+  background-color: #fcbf49;
   color: #000;
 }
 
@@ -75,7 +75,7 @@ header h1 {
 }
 
 nav {
-  background-color: tomato /*Fondo de Home Site pla */;
+  background-color: #fcbf49 /*Fondo de Home Site pla */;
 }
 
 .navigation {
@@ -147,16 +147,16 @@ h3.tittle-card {
 }
 
 li {
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .grid-container ul {
   display: flex;
   justify-content: left;
   flex-direction: column;
-  align-items: center;
   padding-top: 20px;
   display: flex;
+  list-style: none;
 }
 
 .grid-container ul li a {
@@ -169,6 +169,7 @@ section p {
 }
 
 footer {
+  display: block;
   text-align: center;
   padding: 20px;
   background-color: #1b4965;
