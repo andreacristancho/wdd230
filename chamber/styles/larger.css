@@ -7,7 +7,7 @@
 
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1r;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3fr 2fr 0.5fr 2fr;
     /* width: 100%; */
     margin: 1rem auto;
@@ -18,16 +18,30 @@
     /* text-align: center; */
   }
 
-  .navigation li a {
-    text-align: center;
-    color: rgb(251, 222, 7);
-  }
-
   .hero {
     grid-column: 1/4;
     grid-row: 1/2;
     opacity: 0.8;
     margin-bottom: 30px;
+  }
+
+  nav {
+    padding-bottom: 20px;
+    background-color: #1b4965;
+  }
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+    padding-top: 100px;
+  }
+
+  .navigation a {
+    text-align: end;
+    color: rgb(251, 222, 7);
   }
 
   #menu {

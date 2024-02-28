@@ -1,3 +1,5 @@
+// Footer info //
+
 document.addEventListener("DOMContentLoaded", function () {
   // Copyright information
   const copyrightInfo = document.getElementById("copyrightInfo");
@@ -10,19 +12,23 @@ document.addEventListener("DOMContentLoaded", function () {
   lastModified.textContent = `Last Modified: ${lastModifiedDate}`;
 });
 
+// Hamburguer menu //
+
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
 hamButton.addEventListener("click", () => {
-  navigation.classList.toggle("open");
-  hamButton.classList.toggle("open");
+  navigation.classList.toggle("show");
+  hamButton.classList.toggle("show");
 });
 
-// Dark Mode //
+//Dark Mode  Toggle
 
-const darkModeToggle = document.getElementById("dark-mode-toggle");
-const body = document.body;
+const modeButton = document.querySelector("#mode");
+const body = document.querySelector("body");
+const main = document.querySelector("main");
 
-darkModeToggle.addEventListener("click", () => {
+modeButton.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
+  main.classList.toggle("dark-mode");
 });

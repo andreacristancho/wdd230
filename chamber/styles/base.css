@@ -15,7 +15,6 @@ pego en CSS*/
 }
 
 body {
-  width: 100%;
   height: auto;
   font-family: "Poppins", sans-serif;
   /* margin: 0; */
@@ -62,6 +61,8 @@ p {
   padding: 0;
 }
 
+/* Mobile View */
+
 #menu {
   display: block;
   font-size: 2rem;
@@ -78,13 +79,9 @@ p {
   content: "≡";
 }
 
-#menu.open::before {
-  content: "❎";
-}
-
-.nav {
-  border-bottom: 2px solid red;
+nav {
   padding-bottom: 20px;
+  background-color: rgb(243, 238, 238);
 }
 
 .navigation {
@@ -93,28 +90,20 @@ p {
   max-width: 760px;
 }
 
+.navigation li {
+  display: none;
+}
+
 .navigation a {
   display: block;
   padding: 1.5rem;
   text-align: left;
   text-decoration: none;
-  color: #e63946;
+  color: black;
   font-size: 2rem;
   font-weight: 700;
   transition: 0.5s;
-}
-
-.show li {
-  display: block;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 20px;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
 .navigation a:hover,
@@ -131,15 +120,6 @@ navigation a:active {
   content: "X";
 }
 
-.active::before {
-  content: "📍"; /* just a wayfinding symbol for the user */
-}
-
-.dark-mode {
-  display: block;
-  background-color: #222222;
-  color: #ffffff;
-}
 
 /*HERO SECTION */
 .hero {
@@ -247,6 +227,28 @@ img {
   /* margin: 0; */
 }
 
+/* Dark Mode */
+
+#mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+  border-color: #eee;
+  color: black;
+}
+
+
+
+/***** MEDIA QUERIE ****/
+
 @media screen and (max-width: 550px) {
   h1 {
     font-size: 2.5rem;
@@ -259,44 +261,45 @@ img {
     text-align: center;
   }
 
-  #menu {
-    display: flex; /* hide hamburger button */
-    flex-direction: column;
-  }
-
-  .nav {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-  }
+  /*
   .navigation {
-    flex-direction: column;
-    align-items: end;
+    display: flex;
   }
 
-  .navigation a {
+  .navigation li {
     display: block;
     flex: 1 1 100%;
   }
 
-  .navigation li {
-    display: flex;
-    flex-direction: column;
+  .navigation a {
+    text-align: center;
   }
 
-  .show li {
-    display: block;
+  #menu {
+    display: none;
   }
-}
+  */
 
-.title-companies {
-  font-family: poppins, sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  padding-left: 200px;
-  padding-right: 200px;
-  color: #ff6700;
+  .all-section-events,
+  .all-section-weather {
+    background-color: #ebebeb;
+    border: 1px solid grey;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+    margin: 30px;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .title-companies {
+    font-family: poppins, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: #ff6700;
+  }
+
+
 }

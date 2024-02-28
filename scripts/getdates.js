@@ -1,3 +1,5 @@
+// Footer Info //
+
 document.addEventListener("DOMContentLoaded", function () {
   // Copyright information
   const copyrightInfo = document.getElementById("copyrightInfo");
@@ -10,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   lastModified.textContent = `Last Modified: ${lastModifiedDate}`;
 });
 
+// Hamburguer menu //
 const mainnav = document.querySelector(".navigation");
 const hamButton = document.querySelector("#menu");
 
@@ -17,3 +20,5 @@ hamButton.addEventListener("click", () => {
   mainnav.classList.toggle("show");
   hamButton.classList.toggle("open");
 });
+
+//

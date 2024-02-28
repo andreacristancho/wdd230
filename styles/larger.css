@@ -1,7 +1,6 @@
 @media only screen and (min-width: 500px) {
   header,
   main {
-    
     margin: 1rem auto;
     padding: 1rem;
   }
@@ -53,8 +52,17 @@
     text-align: center;
   }
 
-
   #menu {
     display: none;
+  }
+
+  .card ul li {
+    padding-bottom: 15px;
+    color: rgb(218, 14, 14);
+  }
+
+  .card p {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
