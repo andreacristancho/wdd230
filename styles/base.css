@@ -45,8 +45,7 @@ main h2 {
   position: absolute;
   top: 30px;
 	left: 30px;
-	background: radial-gradient(#fff, #fcbf49);
-	border: 1px solid rgba(0,0,0,.75);
+	background: radial-gradient(#fff, white);
 	padding: 1.0rem;
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.75;
@@ -224,6 +223,7 @@ section iframe {
   margin: auto; /* Márgenes alrededor del iframe */
   justify-content: center; /* Centra los elementos horizontalmente */
   align-items: center;
+  padding-bottom: 50px;
 
 }
 
