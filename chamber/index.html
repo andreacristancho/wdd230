@@ -42,14 +42,36 @@
   </head>
 
   <header>
-    <a id="logo-link" href="index.html">
+    <a id="logo-link" href="index.html"></a>
+    <div class="logo-img">
+      <picture>
+        <source
+          class="logo-500"
+          srcset="images/new-logo-500px.webp"
+          media="(max-width: 500px)"
+        />
+        <source
+          srcset="images/new-logo-1000px.webp"
+          media="(max-width: 1000px)"
+        />
+        <img
+          src="images/new-logo-1600px.webp"
+          alt="people working"
+          width="1600"
+          height="800"
+        />
+      </picture>
+    </div>
+
+    <!--
       <img
         class="logo"
         src="images/logo-temporal.png"
         alt="Bucaramanga Chamber of Commerce"
         width="400"
       />
-    </a>
+    </a>  -->
+
     <h1 class="banner-title">Bucaramanga Chamber of Commerce</h1>
 
     <!-- menu hamburguesa -->
@@ -70,7 +92,25 @@
   <body>
     <main>
       <div class="hero">
-        <img src="images/ok-hero-negociantes.png" alt="People enjoying work" />
+        <picture>
+          <source
+            srcset="images/ok-hero-negociantes-498px.webp"
+            media="(max-width: 498px)"
+          />
+          <source
+            srcset="images/ok-hero-negociantes-1000px.webp"
+            media="(max-width: 1000px)"
+          />
+          <img
+            src="images/ok-hero-negociantes-1600px.webp"
+            alt="people working"
+            width="1600"
+            height="800"
+          />
+        </picture>
+
+        <!-- <img src="images/ok-hero-negociantes.webp" alt="People enjoying work" />  -->
+
         <button class="join">Join Us Today</button>
       </div>
 
@@ -105,19 +145,19 @@
       <section class="each-section-hotel">
         <!--   Img luego <img class="card-img" src="images/productivity-image.png" alt="Coaching" />   -->
         <h3>Ciudad Bonita Hotel</h3>
-        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <p>Relax in luxury accommodations at our spotlighted hotel.</p>
       </section>
 
       <section class="each-section-oil">
         <!--   Img luego <img class="card-img" src="images/coaching-image.png" alt="Coaching" />   -->
         <h3>Hega Oil Company</h3>
-        <p>bbbbbbbbbbbbbbbbbbbb</p>
+        <p>Depend on premium gas services from our showcased company.</p>
       </section>
 
       <section class="each-section-food">
         <!--   Img luego <img class="card-img" src="images/coaching-image.png" alt="Coaching" />   -->
         <h3>Socalif Restaurant</h3>
-        <p>bbbbbbbbbbbbbbbbbbbb</p>
+        <p>Savor exquisite dishes at our featured restaurant.</p>
       </section>
     </main>
 
