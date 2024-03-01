@@ -18,13 +18,6 @@
     /* text-align: center; */
   }
 
-  .hero {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    opacity: 0.8;
-    margin-bottom: 30px;
-  }
-
   nav {
     padding-bottom: 20px;
     background-color: #1b4965;
@@ -48,9 +41,18 @@
     display: none;
   }
 
+  .hero {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
   .join {
-    top: 50%;
-    left: 50%;
+    position: absolute;
+    top: 60%;
+    left: 10%;
     justify-content: center;
     margin-top: 20px;
     margin-left: 100px;
@@ -112,12 +114,6 @@
   }
   .weather {
     grid-column: 3/3;
-  }
-
-  .all-section-events h2,
-  .all-section-weather h2 {
-    font-family: poppins, sans-serif;
-    font-size: 3rem;
   }
 
   .all-section-events h3,

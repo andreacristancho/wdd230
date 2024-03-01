@@ -1,3 +1,5 @@
+/*CSS CHAMBER*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 * {
@@ -10,9 +12,6 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  /*display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3fr 1fr 3fr 3fr 3fr;*/
   margin-left: 10%;
   margin-right: 10%;
   background-color: rgb(247, 244, 244);
@@ -31,7 +30,6 @@ main h2 {
   display: flex;
   position: relative;
   margin: 10px auto;
-  position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 300px;
 }
@@ -42,13 +40,14 @@ main h2 {
 }
 
 .herolabel {
+  /*join */
   position: absolute;
   top: 30px;
-	left: 30px;
-	background: radial-gradient(#fff, white);
-	padding: 1.0rem;
-	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
+  left: 30px;
+  background: radial-gradient(#fff, white);
+  padding: 1rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
 }
 
 body,
@@ -138,10 +137,27 @@ navigation a:active {
   content: "X";
 }
 
+/*VOY ACÁ REVISAR*/
+.all-section-events,
+.all-section-weather,
+.each-section-food,
+.each-section-hotel,
+.each-section-oil {
+  background-color: #ebebeb;
+  border: 1px solid grey;
+  box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+  margin: 30px;
+  gap: 20px;
+  padding: 20px;
+}
+
+/*
+
 .grid-container {
   background-color: white;
   box-shadow: 7px 4px 7px 4px rgba(0, 0, 0, 0.1);
-  margin-left: 10%;
+  margin-left: 10
+  %;
   margin-right: 10%;
 }
 
@@ -164,8 +180,10 @@ h3.tittle-card {
   padding-top: 0;
   padding-bottom: 20px;
 
-  /*text-align: center; */
+  /*text-align: center; 
 }
+
+
 
 li {
   padding-left: 20px;
@@ -181,12 +199,18 @@ li {
 }
 
 .grid-container ul li a {
-  color: #1d1e3a; /* Letra Activity */
+  color: #1d1e3a; /* Letra Activity 
 }
+
+*/
 
 section p {
   text-align: center;
   color: #1d3557;
+}
+
+.all-section-weather h2 {
+  color: black;
 }
 
 footer {
@@ -216,7 +240,7 @@ main h2::after {
 }
 
 section iframe {
- display: flex;
+  display: flex;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -224,7 +248,17 @@ section iframe {
   justify-content: center; /* Centra los elementos horizontalmente */
   align-items: center;
   padding-bottom: 50px;
+}
 
+.dark-mode .all-section-events,
+.all-section-weather {
+  background-color: #ebebeb;
+  border: 1px solid grey;
+  box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+  margin: 30px;
+  gap: 20px;
+  padding: 20px;
+  color: white;
 }
 
 @media only screen and (min-width: 40em) {
@@ -244,5 +278,9 @@ section iframe {
 
   .map {
     display: flex;
+  }
+
+  .all-section-weather h2 {
+    color: black;
   }
 }
