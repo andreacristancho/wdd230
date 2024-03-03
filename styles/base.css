@@ -151,6 +151,13 @@ navigation a:active {
   padding: 20px;
 }
 
+.all-section-events p,
+.all-section-weather p,
+.each-section-food p,
+.each-section-hotel p,
+.each-section-oil p {
+  color: black;
+}
 /*
 
 .grid-container {
@@ -209,18 +216,6 @@ section p {
   color: #1d3557;
 }
 
-.all-section-weather h2 {
-  color: black;
-}
-
-footer {
-  display: block;
-  text-align: center;
-  padding: 20px;
-  background-color: #1b4965;
-  color: white;
-}
-
 #lastModified {
   color: #f3c88c;
 }
@@ -250,18 +245,37 @@ section iframe {
   padding-bottom: 50px;
 }
 
-.dark-mode .all-section-events,
-.all-section-weather {
-  background-color: #ebebeb;
-  border: 1px solid grey;
-  box-shadow: 0 0 10px rgba(5, 5, 5, 5);
-  margin: 30px;
-  gap: 20px;
+.dark-mode {
+  .all-section-events {
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+    margin: 30px;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+  }
+
+  .all-section-weather {
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 5);
+    margin: 30px;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+  }
+}
+
+footer {
+  display: block;
+  text-align: center;
   padding: 20px;
+  background-color: #1b4965;
   color: white;
 }
 
-@media only screen and (min-width: 40em) {
+@media screen and (min-width: 501px) {
   .navigation {
     display: flex;
   }
@@ -278,9 +292,5 @@ section iframe {
 
   .map {
     display: flex;
-  }
-
-  .all-section-weather h2 {
-    color: black;
   }
 }
